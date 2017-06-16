@@ -4,9 +4,9 @@
 
 //load the data
 d3.queue()
-    .defer(d3.csv,"../data/orders_export.csv")
-    .defer(d3.csv,"../data/Australian_Post_Codes_Lat_Lon.csv")
-    .defer(d3.json, "../data/postcodes.json")
+    .defer(d3.csv,"./data/orders.csv")
+    .defer(d3.csv,"./data/Australian_Post_Codes_Lat_Lon.csv")
+    .defer(d3.json,"./data/postcodes.json")
     .await(merge);
 
 
